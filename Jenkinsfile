@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     if (checkOs() == 'Windows') {
-                        bat 'python 1.py'
+                        bat 'start /min python web_app.py'
                     } else {
                         sh 'python 1.py'
                     }
